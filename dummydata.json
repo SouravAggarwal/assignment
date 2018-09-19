@@ -1,0 +1,94 @@
+
+{
+    "properties" : [
+  {
+    "id": "prop1",
+    "latitude": "19.12278946",
+    "longitude": "72.83677506",
+    "price":"134680",
+    "n_bedrooms": 1,
+    "n_bathrooms":1
+  },
+  {
+    "id": "prop2",
+    "latitude": "19.22408697",
+    "longitude": "72.93557343",
+    "price":"122680",
+    "n_bedrooms": 8,
+    "n_bathrooms":4
+  },
+  {
+    "id": "prop3",
+    "latitude": "19.15636702",
+    "longitude": "72.83557343",
+    "price":"152680",
+    "n_bedrooms": 4,
+    "n_bathrooms":2
+  },{
+    "id": "prop4",
+    "latitude": "19.10438",
+    "longitude": "72.82553124",
+    "price":"292680",
+    "n_bedrooms": 5,
+    "n_bathrooms": 2
+  }
+  ]
+,
+    "requirements" : [
+  {
+    "id": "req1",
+    "latitude": "19.12278946",
+    "longitude": "72.83677506",
+    "min_bedrooms": 8,
+    "max_bedrooms": 15,
+    "min_bathrooms":1,
+    "max_bathrooms":12,
+    "min_budget": "122600",
+    "max_budget": "152280"
+  },
+  {
+    "id": "req9",
+    "latitude": "19.12278946",
+    "longitude": "72.83677506",
+    "min_bedrooms": 1,
+    "max_bedrooms": 3,
+    "min_bathrooms":1,
+    "max_bathrooms":3,
+    "min_budget": "122600",
+    "max_budget": "129280"
+  },
+  {
+    "id": "req2",
+    "latitude": "19.12278946",
+    "longitude": "72.85677506",
+    "min_bedrooms": 0, 
+    "max_bedrooms": 3,
+    "min_bathrooms":1,
+    "max_bathrooms":3,
+    "min_budget": 0,
+    "max_budget": 0
+  },
+  {
+    "id": "req3",
+    "latitude": "19.91278946",
+    "longitude": "72.83677506",
+    "min_bedrooms": 2,
+    "max_bedrooms": 0,
+    "min_bathrooms": 0,
+    "max_bathrooms":1,
+    "min_budget": "102600",
+    "max_budget": "112280"
+  },
+  {
+    "id": "req4",
+    "latitude": "18.12278946",
+    "longitude": "73.83677506",
+    "min_bedrooms": 1,
+    "max_bedrooms": 3,
+    "min_bathrooms":0,
+    "max_bathrooms":3,
+    "min_budget": "92600",
+    "max_budget": "102280"
+  }
+  ]
+}
