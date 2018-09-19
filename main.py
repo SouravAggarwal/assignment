@@ -4,8 +4,8 @@ from utils import cal_total
 
 
 def fetch_valid_properties():
-    """ It defines all tweaking parameters like (weightage, validthreshold)
-        and calculates the match % for each buyer with all properties.
+    """ It defines some of tweaking parameters like (weightage, validthreshold)
+        and calculates the match % of requirement with all properties.
 
     Returns:
         It returns a dict, where key is requirement id and value is a list of matching properties with their match percentages.
