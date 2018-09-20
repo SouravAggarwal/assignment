@@ -77,10 +77,10 @@ def cal_budget_match(property_budget, req_min, req_max, valid_min=10.0, valid_ma
     if (req_min and req_max) or (not req_min and not req_max):
         if (req_min <= property_budget <= req_max) or (not req_min and not req_max):
             return 1
-        lw = req_min * ((100 - valid_max) / 100) - 0.001
+        lw = req_min * ((100 - valid_max) / 100) - 0.001  #adding bias
         if lw <= property_budget < req_min:
             return (property_budget - lw) / (req_min - lw)
-        hr = req_max * ((100 + valid_max) / 100) + 0.001
+        hr = req_max * ((100 + valid_max) / 100) + 0.001  #adding bias
         if req_max < property_budget <= hr:
             return 1.0 - ((property_budget - req_max) / (hr - req_max))
         return 0
@@ -88,7 +88,7 @@ def cal_budget_match(property_budget, req_min, req_max, valid_min=10.0, valid_ma
     if req_budget * ((100 - valid_min) / 100) <= property_budget <= req_budget * ((100 + valid_min) / 100):
         return 1
     if req_budget * ((100 - valid_max) / 100) <= property_budget <= req_budget * ((100 + valid_max) / 100):
-        diff_per = (abs(property_budget - req_budget) * 100 / req_budget) - valid_min - 0.001
+        diff_per = (abs(property_budget - req_budget) * 100 / req_budget) - valid_min - 0.001  #adding bias
         return 1.0 - (diff_per / (valid_max - valid_min))
     return 0
 

@@ -1,2 +1,2 @@
 # assignment
-problem.txt consists of  Problem Statament, Assumptions/Considerations, possible Cases and Execution Time.
+problem.txt contains the Problem Statament, Assumptions/Considerations, possible Cases and Execution Time.
